@@ -59,15 +59,24 @@ export default () => (
             color: grey;
             text-decoration: none;
         }
+        .flex {
+          display: flex;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          width: 100%;
+          height: 100vh;
+        }
         .flex-home {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          width: 100%;
-          height: 100vh;
+          // width: 100%;
+          // height: 100vh;
         }
-        .flex-page {
+        .flex-nav {
           display: flex;
           justify-content: center;
           position: fixed;
@@ -75,7 +84,7 @@ export default () => (
           align-items: flex-start;
           flex-direction: column;
           width: 100%;
-          height: 100vh;
+          // height: 100vh;
         }
         .bg {
           background: rgba(19, 19, 19, 1) 100%;
