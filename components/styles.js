@@ -67,14 +67,19 @@ export default () => (
           flex-direction: row;
           width: 100%;
           height: 100vh;
+          overflow-y: scroll;
         }
-        .flex-home {
+        .flex-blog {
           display: flex;
+          flex-flow: wrap
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          // width: 100%;
+          width: 100%;
           // height: 100vh;
+          line-height: 25px;
+          height: 80%;
+          overflow-y: scroll;
         }
         .flex-nav {
           display: flex;
@@ -88,15 +93,12 @@ export default () => (
         }
         .bg {
           background: rgba(19, 19, 19, 1) 100%;
-          background-repeat: no-repeat;
-          background-size: 1000% 1000%;
           -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
           -moz-animation: fadein 2s; /* Firefox < 16 */
           -ms-animation: fadein 2s; /* Internet Explorer */
           -o-animation: fadein 2s; /* Opera < 12.1 */
           animation: fadein 2s;
         }
-
         .vertical-text {
           transform: rotate(-90deg);
           transform-origin: 0 100%;
@@ -157,6 +159,10 @@ export default () => (
         @-o-keyframes fadein {
             from { opacity: 0; }
             to   { opacity: 1; }
+        }
+        ::-webkit-scrollbar {
+          width: 0px;  /* remove scrollbar space */
+          background: transparent;  /* optional: just make scrollbar invisible */
         }
       `}</style>
     </Head>

@@ -50,29 +50,27 @@ export default class extends React.Component {
                 <Style />
                 <div className="bg">
                     <div className={this.state.flex}>
-                        <div className="flex-home">
-                            <div style={{width: "20em"}}>
-                                <div className="flex-row">
-                                    <div className="boxed">>/usr/mooku/home/</div>
+                        <div style={{width: "20em"}}>
+                            <div className="flex-row">
+                                <div className="boxed">>/usr/mooku/home/</div>
+                            </div>
+                            <div className="flex-row">
+                                <div className="halfBoxed">
+                                    <a href="/blog" onClick={this.handleClickInternal}>/Blog/</a>
                                 </div>
-                                <div className="flex-row">
-                                    <div className="halfBoxed">
-                                        <a href="/blog" onClick={this.handleClickInternal}>/Blog/</a>
-                                    </div>
-                                    <div className="halfBoxed">
-                                        <a href="/about" onClick={this.handleClickInternal}>/About/</a>
-                                    </div>
+                                <div className="halfBoxed">
+                                    <a href="/about" onClick={this.handleClickInternal}>/About/</a>
                                 </div>
-                                <div className="flex-row">
-                                    <div className="thirdBoxed">
-                                        <a href="https://github.com/MilkyMiku" onClick={this.handleClickExternal}>/Github/</a>
-                                    </div>
-                                    <div className="thirdBoxed">
-                                        <a href="https://twitter.com/MookuDesu" onClick={this.handleClickExternal}>/Twitter/</a>
-                                    </div>
-                                    <div className="thirdBoxed">
-                                        <a className={this.state.discordClass}  onClick={this.handleClickDiscord}>{this.state.discord}</a>
-                                    </div>
+                            </div>
+                            <div className="flex-row">
+                                <div className="thirdBoxed">
+                                    <a href="https://github.com/MilkyMiku" onClick={this.handleClickExternal}>/Github/</a>
+                                </div>
+                                <div className="thirdBoxed">
+                                    <a href="https://twitter.com/MookuDesu" onClick={this.handleClickExternal}>/Twitter/</a>
+                                </div>
+                                <div className="thirdBoxed">
+                                    <a className={this.state.discordClass}  onClick={this.handleClickDiscord}>{this.state.discord}</a>
                                 </div>
                             </div>
                         </div>
