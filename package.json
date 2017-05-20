@@ -10,8 +10,8 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "next start -p $port",
-    "heroku-postbuild": "next build"
+    "start": "next start -p $port"
+    // "heroku-postbuild": "next build"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
