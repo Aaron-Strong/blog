@@ -14,6 +14,10 @@ export default class extends React.Component {
         }
     };
 
+    componentDidMount() {
+        Router.prefetch('/about');
+        Router.prefetch('/blog');
+    }
     handleChange = (e) => { 
         
     };
@@ -68,7 +72,7 @@ export default class extends React.Component {
                                         <a href="https://twitter.com/MookuDesu" onClick={this.handleClickExternal}>/Twitter/</a>
                                     </div>
                                     <div className="thirdBoxed">
-                                        <a href="https://discord.gg/NZTHmsk" className={this.state.discordClass} onClick={this.handleClickDiscord}>{this.state.discord}</a>
+                                        <a className={this.state.discordClass}  onClick={this.handleClickDiscord}>{this.state.discord}</a>
                                     </div>
                                 </div>
                             </div>

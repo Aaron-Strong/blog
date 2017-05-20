@@ -11,7 +11,9 @@ export default class extends React.Component {
             flex: "flex"
         }
     };
-
+    componentDidMount() {
+        Router.prefetch('/')
+    }
     handleChange = (e) => { 
         
     };

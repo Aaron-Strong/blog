@@ -5,4 +5,5 @@ yarn install
 # Hot/Live Reloading
 yarn dev 
 # Production
+yarn build
 yarn start
