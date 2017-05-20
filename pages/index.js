@@ -38,7 +38,6 @@ export default class extends React.Component {
     }
     handleClickInternal = (e) => { 
         e.preventDefault();
-        console.log("moo")
         Router.push({pathname: e.target.href})
         this.setState( {flex: "flex faded"} )
     };

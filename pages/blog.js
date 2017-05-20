@@ -21,8 +21,6 @@ export default class extends React.Component {
     // ..whilst keeping next.js Router features
     handleClickInternal = (e) => { 
         e.preventDefault();
-        console.log(Router.asPath)
-        console.log(e.target.href)
         if(!e.target.href.includes(Router.asPath)) {
             Router.push({pathname: e.target.href})
             this.setState( {flex: "flex faded"} )
