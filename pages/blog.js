@@ -42,6 +42,7 @@ export default class extends React.Component {
                     <div className={this.state.flex}>
 
                         <div className="flex-blog">
+                        <div style={{borderRight: "1px dotted white"}}>
                             {test}
                             <div className="flex-row">
                                 <p>Soon™</p>
