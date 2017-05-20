@@ -71,21 +71,19 @@ export default () => (
         }
         .flex-blog {
           display: flex;
-          flex-flow: wrap
-          justify-content: center;
           align-items: center;
           flex-direction: column;
-          width: 100%;
+          width: 95%;
           // height: 100vh;
           line-height: 25px;
           height: 80%;
           overflow-y: scroll;
+          z-index: 999;
         }
         .flex-nav {
           display: flex;
           justify-content: center;
           position: fixed;
-
           align-items: flex-start;
           flex-direction: column;
           width: 100%;
