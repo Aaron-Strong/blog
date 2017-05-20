@@ -1,4 +1,4 @@
-### Finally making a blog/portfolio i Guess
+### Finally making a blog/portfolio I guess
 Using [next.js](https://github.com/zeit/next.js/)
 ```Bash
 yarn install
