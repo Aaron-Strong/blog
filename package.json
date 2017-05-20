@@ -10,7 +10,7 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "next start",
+    "start": "next start -p process.env.PORT",
     "heroku-postbuild": "next build"
   },
   "devDependencies": {
