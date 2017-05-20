@@ -10,10 +10,12 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "heroku-postbuild": "next build"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^7.0.1"
-  }
+  },
+  "engines":{"node": "7.2.0"}
 }
