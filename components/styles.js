@@ -108,6 +108,9 @@ export default () => (
             0% {opacity:1;}
             100% {opacity:0;}
         }
+        .notFaded {
+          opacity: 100;
+        }
         .faded {
           opacity:0;
           -webkit-animation: faded 0.4s linear;

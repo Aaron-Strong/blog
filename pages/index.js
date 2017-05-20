@@ -8,13 +8,30 @@ export default class extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            flex: "flex-home"
+            flex: "flex-home",
+            discord: "/Discord/",
+            discordClass: ""
         }
     };
 
     handleChange = (e) => { 
         
     };
+    handleClickDiscord = (e) => {
+        e.preventDefault();
+        var text;
+        if(this.state.discord == "Mooku#3883"){
+            text = "/Discord/"
+        }
+        else {
+            text = "Mooku#3883"
+        }
+        this.setState({discordClass: "faded"});
+        this.timer = setTimeout(_ => {
+            this.setState({discord: text});
+            this.setState({discordClass: ""})
+        }, 500)
+    }
     handleClickInternal = (e) => { 
         e.preventDefault();
         console.log("moo")
@@ -50,7 +67,7 @@ export default class extends React.Component {
                                     <a href="https://twitter.com/MookuDesu" onClick={this.handleClickExternal}>/Twitter/</a>
                                 </div>
                                 <div className="thirdBoxed">
-                                    <a href="https://discord.gg/NZTHmsk" onClick={this.handleClickExternal}>/Discord/</a>
+                                    <a href="https://discord.gg/NZTHmsk" className={this.state.discordClass} onClick={this.handleClickDiscord}>{this.state.discord}</a>
                                 </div>
                             </div>
                         </div>
