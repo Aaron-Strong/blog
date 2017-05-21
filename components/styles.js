@@ -72,9 +72,8 @@ export default () => (
         .flex-blog {
           display: flex;
           align-items: center;
-          flex-direction: column;
+          flex-direction: column;       
           width: 95%;
-          // height: 100vh;
           line-height: 25px;
           height: 80%;
           overflow-y: scroll;
@@ -133,6 +132,7 @@ export default () => (
           justify-content: center;
           align-items: center;
           flex-direction: row;
+          text-align: center;
         }
         @keyframes fadein {
           from { opacity: 0; }
