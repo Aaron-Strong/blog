@@ -3,7 +3,6 @@ import Style from '../../components/styles'
 import Link from "next/link"
 import Router from "next/router"
 import {helloWorld} from "../../components/blogPages"
-console.log(helloWorld)
 const HelloWorld = helloWorld.content
 export default class extends React.Component {
 

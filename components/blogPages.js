@@ -1,6 +1,7 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
+import SyntaxHighlighter, { registerLanguage } from "react-syntax-highlighter/dist/light"
+import xml from 'react-syntax-highlighter/dist/languages/xml';
 import { dark } from "react-syntax-highlighter/dist/styles";
-
+registerLanguage("http", xml);
 const helloWorldCode1 = "<div>\r\n    <h2>Hello World<\/h2>\r\n    <p>This is me just testing the blog page works as intended :pogchamp:<\/p>\r\n    <p>Works pretty nicely imo<\/p>\r\n    <p>Here\'s some syntax highlighting...<\/p>\r\n<\/div>";
 const helloWorldContent = 
 <div>

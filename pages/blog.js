@@ -16,6 +16,7 @@ export default class extends React.Component {
     };
     componentDidMount() {
         Router.prefetch('/')
+        Router.prefetch('/blog/page')
     }
     handleChange = (e) => { 
         
@@ -24,10 +25,8 @@ export default class extends React.Component {
     // ..whilst keeping next.js Router features
     handleClickInternal = (e) => { 
         e.preventDefault();
-        if(!e.target.href.includes(Router.asPath)) {
             Router.push({pathname: e.target.href})
             this.setState( {flex: "flex faded"} )
-        }
     };
     handleClickExternal = (e) => { 
         this.setState({flex: "flex faded"})
@@ -45,6 +44,7 @@ export default class extends React.Component {
 
                         <div className="flex-blog">
                             <div style={{borderLeft: "1px dashed white", borderRight: "1px dashed white", width: "20em"}}>
+                                    <div className="flex-row"><a style={{lineHeight: "50px"}} href="/blog/page" onClick={this.props.onClickInternal}>Hello World</a></div>
                                     {this.state.blogPages}
                                 <div className="flex-row">
                                     <p>Soon™</p>
