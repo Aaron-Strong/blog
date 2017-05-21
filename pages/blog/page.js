@@ -4,6 +4,9 @@ import Link from "next/link"
 import Router from "next/router"
 import {helloWorld} from "../../components/blogPages"
 const HelloWorld = helloWorld.content
+
+
+
 export default class extends React.Component {
 
     constructor(props) {
