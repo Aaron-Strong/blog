@@ -37,15 +37,17 @@ export default class extends React.Component {
 
                     <div className={this.state.flex}>
 
-                        <div className="flex-home">
-                            <div className="flex-row">
-                                <p>Made By Mooku Using...</p>
-                            </div>
-                            <div className="flex-row">
-                                <ul>
-                                    <li><a href="https://github.com/zeit/next.js/" onClick={this.handleClickExternal}>Next.js</a></li>
-                                    {/* TODO: Add things used here! */}
-                                </ul>
+                        <div className="flex-blog" style={{justifyContent: "center"}}>
+                            <div>
+                                <div className="flex-row">
+                                    <p>Made By Mooku Using...</p>
+                                </div>
+                                <div className="flex-row">
+                                    <ul>
+                                        <li><a href="https://github.com/zeit/next.js/" onClick={this.handleClickExternal}>Next.js</a></li>
+                                        {/* TODO: Add things used here! */}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 

@@ -61,7 +61,6 @@ export default () => (
         }
         .flex {
           display: flex;
-          display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: row;
@@ -72,7 +71,7 @@ export default () => (
         .flex-blog {
           display: flex;
           align-items: center;
-          flex-direction: column;       
+          flex-direction: column;
           width: 95%;
           line-height: 25px;
           height: 80%;
