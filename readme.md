@@ -7,3 +7,5 @@ yarn dev
 # Production
 yarn build
 yarn start
+```
+I'll fix firefx and mobile soon...™
