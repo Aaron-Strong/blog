@@ -47,7 +47,7 @@ export default class extends React.Component {
                                     <HelloWorld/>
                                 </div>
                                 <div className="flex-row">
-                                    <a href="/blog" style={{lineHeight: "5em", textDecoration: "underline"}} onClick={this.props.onClickInternal}>Go Back</a>
+                                    <a href="/blog" style={{lineHeight: "5em", textDecoration: "underline"}} onClick={this.handleClickInternal}>Go Back</a>
                                 </div>
                             </div>
                         </div>
