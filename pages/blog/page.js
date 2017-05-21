@@ -62,6 +62,9 @@ export default class extends React.Component {
                                         <div className="thirdBoxed">
                                             <a href="/" onClick={this.handleClickInternal}>/home/</a>
                                         </div>
+                                        <div className="thirdBoxed">
+                                            <a href="/blog" onClick={this.handleClickInternal}>/blog/</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

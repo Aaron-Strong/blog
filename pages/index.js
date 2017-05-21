@@ -15,6 +15,12 @@ export default class extends React.Component {
     };
 
     componentDidMount() {
+        
+        if((localStorage.getItem("alerted") != "true") && !(navigator.userAgent.toLowerCase().indexOf('chrome') > -1)){
+            alert("This looks bad on anything but chromium/webkit based browsers right now, I'm sorry and will be working on a fix soon™")
+            localStorage.setItem("alerted", true)
+            // Do Firefox-related activities
+        }
         Router.prefetch('/about');
         Router.prefetch('/blog');
     }
@@ -44,7 +50,9 @@ export default class extends React.Component {
     handleClickExternal = (e) => { 
         this.setState({flex: "flex faded"})
     };
+    
     render() {
+
         return (
             <div>
                 <Style />
