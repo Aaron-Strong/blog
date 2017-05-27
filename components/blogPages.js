@@ -38,6 +38,9 @@ const helloWorldContent = (
     <p>.</p>
     <p>.</p>
     <p>See, works pretty damn well</p>
+    <a href="https://github.com/MilkyMiku/blog">
+      All code for the blog can be found here
+    </a>
     <p>[More to come soon™]</p>
   </div>
 );
