@@ -2,14 +2,24 @@ import React from "react";
 import Style from "../components/styles";
 import Link from "next/link";
 import Router from "next/router";
+import Pages from "../components/blogPages";
 export default class extends React.Component {
   constructor(props) {
     super(props);
+    var blogPages = [];
+    for (var page = 0; page < Pages.length; page++) {
+      blogPages.push({
+        name: Pages[page].name,
+        url: Pages[page].url,
+        key: page
+      });
+    }
     this.state = {
       flex: "flex",
-      blogPages: []
+      blogPages: blogPages
     };
   }
+
   componentDidMount() {
     Router.prefetch("/blog/page");
   }
@@ -19,7 +29,7 @@ export default class extends React.Component {
   handleClickInternal = e => {
     e.preventDefault();
     console.log(e.target.href);
-    Router.push({ pathname: e.target.href });
+    Router.push(e.target.href);
     this.setState({ flex: "flex faded" });
   };
   handleClickExternal = e => {
@@ -42,16 +52,19 @@ export default class extends React.Component {
                   minHeight: "42em"
                 }}
               >
-                <div className="flex-row">
-                  <a
-                    onClick={this.handleClickInternal}
-                    style={{ lineHeight: "50px" }}
-                    href="/blog/page"
-                  >
-                    Hello World
-                  </a>
-                </div>
-                {this.state.blogPages}
+                {this.state.blogPages.map(page => {
+                  return (
+                    <div key={page.key} className="flex-row">
+                      <a
+                        onClick={this.handleClickInternal}
+                        style={{ lineHeight: "50px" }}
+                        href={"/blog/page?page=" + page.url}
+                      >
+                        {page.name}
+                      </a>
+                    </div>
+                  );
+                })}
                 <div className="flex-row">
                   <p style={{ color: "grey" }}>More Coming Soon™</p>
                 </div>

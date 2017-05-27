@@ -2,20 +2,34 @@ import React from "react";
 import Style from "../../components/styles";
 import Link from "next/link";
 import Router from "next/router";
-import { helloWorld } from "../../components/blogPages";
-const HelloWorld = helloWorld.content;
-
+import Pages from "../../components/blogPages";
 export default class extends React.Component {
   constructor(props) {
     super(props);
+    var pageDiv;
+    for (var i = 0; i < Pages.length; i++) {
+      console.log(Pages[i]);
+      console.log(Pages[i].url);
+      console.log(this.props.url.query.page);
+      if (this.props.url.query.page === Pages[i].url) {
+        pageDiv = Pages[i].content;
+      }
+    }
+    if (pageDiv === undefined) {
+      pageDiv = (
+        <div>
+          <p>404 Blog Not Found</p>
+        </div>
+      );
+    }
+    console.log(pageDiv);
     this.state = {
       flex: "flex",
-      blogPages: []
+      page: pageDiv
     };
   }
   componentDidMount() {
     Router.prefetch("/");
-    console.log(this.props.url);
   }
   handleChange = e => {};
   // Click events for fade out transition
@@ -40,7 +54,7 @@ export default class extends React.Component {
             <div className="flex-blog">
               <div style={{ width: "30em" }}>
                 <div className="flex-row">
-                  <HelloWorld />
+                  {this.state.page}
                 </div>
                 <div className="flex-row">
                   <a
