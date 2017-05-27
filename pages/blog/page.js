@@ -59,7 +59,7 @@ export default class extends React.Component {
                 <div className="vertical-text">
                   <div className="flex-row">
                     <div className="boxed">
-                      &gt;/usr/mooku/home/about/
+                      &gt;/usr/mooku/home/blog/
                     </div>
                     <div className="thirdBoxed">
                       <a href="/" onClick={this.handleClickInternal}>/home/</a>
