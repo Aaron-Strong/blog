@@ -53,7 +53,7 @@ export default class extends React.Component {
                 </div>
                 {this.state.blogPages}
                 <div className="flex-row">
-                  <p>More Coming Soon™</p>
+                  <p style={{ color: "grey" }}>More Coming Soon™</p>
                 </div>
               </div>
             </div>
