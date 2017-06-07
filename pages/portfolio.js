@@ -40,16 +40,12 @@ export default class extends React.Component {
                   <p>Will be adding projects here very soon..</p>
                 </div>
                 <div className="flex-row">
-                  <ul>
-                    <li>
-                      <a
-                        href="https://github.com/MilkyMiku/"
-                        onClick={this.handleClickExternal}
-                      >
-                        Until then feel free to check out my github here!
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="https://github.com/MilkyMiku/"
+                    onClick={this.handleClickExternal}
+                  >
+                    Until then feel free to check out my github here!
+                  </a>
                 </div>
               </div>
             </div>
