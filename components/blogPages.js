@@ -54,7 +54,8 @@ pageArray.push(helloWorld);
 
 const chillTunesContent = (
   <div>
-    <h3>Just gonna post some chill tunes here</h3>
+    <h3>Tunes I chill to </h3>
+    <a href="https://s.put.re/tqdVeTk.webm">Noname 1 (Piano with dope beats)</a>
     <a href="https://soundcloud.com/neydah/night-sky">night-sky(VaporWave)</a>
   </div>
 );
