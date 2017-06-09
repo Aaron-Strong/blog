@@ -17,7 +17,7 @@ const helloWorldContent = (
     <h2>Hello World</h2>
     <p>This is me just testing the blog page works as intended :pogchamp:</p>
     <p>Works pretty nicely imo</p>
-    <p>Here&#39s some syntax highlighting...</p>
+    <p>Here's some syntax highlighting...</p>
     <SyntaxHighlighter
       language="html"
       style={dark}
