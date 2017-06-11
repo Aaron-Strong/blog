@@ -101,6 +101,9 @@ export default () =>
           -o-animation: fadein 2s; /* Opera < 12.1 */
           animation: fadein 2s;
         }
+        .box-container{
+          width: 20em
+        }
         .vertical-text {
           transform: rotate(-90deg);
           transform-origin: 0 100%;
@@ -112,6 +115,12 @@ export default () =>
           // left: 30px;
           // bottom: 0;
           padding: 100% 0px 0px 0px;
+        }
+        .blog-border {
+          border-left: 1px dashed white;
+          border-right: 1px dashed white;
+          width: 20em;
+          min-height: 42em;
         }
         @-webkit-keyframes faded {
           0% {opacity:1;}
@@ -163,6 +172,49 @@ export default () =>
             from { opacity: 0; }
             to   { opacity: 1; }
         }
+        @media only screen and (max-width: 768px) {
+          // Mobile
+          [class*="box-container"] {
+              width: 100%;
+              height: 100%;
+          }
+          .flex-blog {
+            height: 100%;
+            width: 100%;
+          }
+          .blog-border {
+            border-left: none;
+            border-right: none;
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+          }
+          .flex-nav {
+            display: none;
+            justify-content: center;
+            position: fixed;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 100%;
+            // height: 100vh;
+          }
+          .flex-row {
+            width: 100%;
+          }
+          html, body {
+            font-size: 100%;
+            word-wrap: break-word;
+            overflow: auto;
+            overflow-wrap: break-word;
+          }
+          p{
+            word-wrap: break-word;
+            overflow: auto;
+            overflow-wrap: break-word;
+            width: 100%;
+            max-width: 100%;
+          }
+}
       `}</style>
     </Head>
   </header>;

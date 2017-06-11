@@ -53,9 +53,25 @@ export default class extends React.Component {
         <div className="bg">
 
           <div className={this.state.flex}>
-            <div className="flex-blog">
+            <div
+              className="flex-blog"
+              style={{ overflow: "hidden", height: "90vh" }}
+            >
 
-              <Scrollbars universal style={{ height: "42em" }}>
+              <Scrollbars
+                style={{ width: "100%", height: "100%", overflow: "hidden" }}
+                universal
+                renderThumbVertical={({ style, ...props }) =>
+                  <div
+                    {...props}
+                    style={{
+                      ...style,
+                      backgroundColor: "#bbffe3",
+                      width: "0.25em",
+                      height: "0.25em"
+                    }}
+                  />}
+              >
                 <div className="flex-row">
                   {this.state.page}
                 </div>

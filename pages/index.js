@@ -62,7 +62,7 @@ export default class extends React.Component {
         <Style />
         <div className="bg">
           <div className={this.state.flex}>
-            <div style={{ width: "20em" }}>
+            <div className="box-container">
               <div className="flex-row">
                 <div className="boxed">&gt;/usr/mooku/home/</div>
               </div>

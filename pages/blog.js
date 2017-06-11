@@ -46,15 +46,30 @@ export default class extends React.Component {
           <div className={this.state.flex}>
 
             <div className="flex-blog">
-              <div
-                style={{
-                  borderLeft: "1px dashed white",
-                  borderRight: "1px dashed white",
-                  width: "20em",
-                  minHeight: "42em"
-                }}
-              >
-                <Scrollbars universal style={{ height: "42em" }}>
+              <div className="blog-border">
+                <Scrollbars
+                  style={{ width: "100%", height: "100%", overflow: "hidden" }}
+                  universal
+                  renderThumbVertical={({ style, ...props }) =>
+                    <div
+                      {...props}
+                      style={{
+                        ...style,
+                        backgroundColor: "#bbffe3",
+                        width: "0.25em",
+                        height: "0.25em"
+                      }}
+                    />}
+                >
+                  <div className="flex-row">
+                    <a
+                      href="/blog"
+                      style={{ lineHeight: "5em", textDecoration: "underline" }}
+                      onClick={this.handleClickInternal}
+                    >
+                      Go Back
+                    </a>
+                  </div>
                   {this.state.blogPages.map(page => {
                     return (
                       <div key={page.key} className="flex-row">

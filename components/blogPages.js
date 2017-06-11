@@ -3,7 +3,7 @@
 
 import SyntaxHighlighter, { registerLanguage } from "react-syntax-highlighter/dist/light";
 import xml from "react-syntax-highlighter/dist/languages/xml";
-import { dark } from "react-syntax-highlighter/dist/styles";
+import customStyle from "./customStyle";
 registerLanguage("http", xml);
 
 const pageArray = [];
@@ -18,7 +18,7 @@ const helloWorldContent = (
     <p>Here's some syntax highlighting...</p>
     <SyntaxHighlighter
       language="html"
-      style={dark}
+      style={customStyle}
       customStyle={{
         background: "none",
         textAlign: "left"
