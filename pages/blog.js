@@ -54,7 +54,7 @@ export default class extends React.Component {
                   minHeight: "42em"
                 }}
               >
-                <Scrollbars universal style={{ height: "40em" }}>
+                <Scrollbars universal style={{ height: "42em" }}>
                   {this.state.blogPages.map(page => {
                     return (
                       <div key={page.key} className="flex-row">

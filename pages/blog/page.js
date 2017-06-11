@@ -55,7 +55,7 @@ export default class extends React.Component {
           <div className={this.state.flex}>
             <div className="flex-blog">
 
-              <Scrollbars universal style={{ height: "60em", width: "60em" }}>
+              <Scrollbars universal style={{ height: "42em" }}>
                 <div className="flex-row">
                   {this.state.page}
                 </div>
