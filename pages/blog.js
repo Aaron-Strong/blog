@@ -3,6 +3,8 @@ import Style from "../components/styles";
 import Link from "next/link";
 import Router from "next/router";
 import Pages from "../components/blogPages";
+import { Scrollbars } from "react-custom-scrollbars";
+
 export default class extends React.Component {
   constructor(props) {
     super(props);
@@ -52,22 +54,24 @@ export default class extends React.Component {
                   minHeight: "42em"
                 }}
               >
-                {this.state.blogPages.map(page => {
-                  return (
-                    <div key={page.key} className="flex-row">
-                      <a
-                        onClick={this.handleClickInternal}
-                        style={{ lineHeight: "50px" }}
-                        href={"/blog/page?page=" + page.url}
-                      >
-                        {page.name}
-                      </a>
-                    </div>
-                  );
-                })}
-                <div className="flex-row">
-                  <p style={{ color: "grey" }}>More Coming Soon™</p>
-                </div>
+                <Scrollbars universal style={{ height: "40em" }}>
+                  {this.state.blogPages.map(page => {
+                    return (
+                      <div key={page.key} className="flex-row">
+                        <a
+                          onClick={this.handleClickInternal}
+                          style={{ lineHeight: "60px" }}
+                          href={"/blog/page?page=" + page.url}
+                        >
+                          {page.name}
+                        </a>
+                      </div>
+                    );
+                  })}
+                  <div className="flex-row">
+                    <p style={{ color: "grey" }}>More Coming Soon™</p>
+                  </div>
+                </Scrollbars>
               </div>
             </div>
 

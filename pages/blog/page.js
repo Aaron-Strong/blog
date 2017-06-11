@@ -3,6 +3,8 @@ import Style from "../../components/styles";
 import Link from "next/link";
 import Router from "next/router";
 import Pages from "../../components/blogPages";
+import { Scrollbars } from "react-custom-scrollbars";
+
 export default class extends React.Component {
   constructor(props) {
     super(props);
@@ -52,7 +54,8 @@ export default class extends React.Component {
 
           <div className={this.state.flex}>
             <div className="flex-blog">
-              <div style={{ width: "30em" }}>
+
+              <Scrollbars universal style={{ height: "60em", width: "60em" }}>
                 <div className="flex-row">
                   {this.state.page}
                 </div>
@@ -65,7 +68,7 @@ export default class extends React.Component {
                     Go Back
                   </a>
                 </div>
-              </div>
+              </Scrollbars>
             </div>
 
             <div className="flex-nav">

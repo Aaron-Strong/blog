@@ -1,10 +1,16 @@
 /* eslint-disable */
-import React from "react"
-import Head from "next/head"
+import React from "react";
+import Head from "next/head";
 
-export default () => (
+export default () =>
   <header>
     <Head>
+      <title>Portfolio/Blog Test Site</title>
+      <meta charSet="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      />
       <style>{`
         html, body {
           width: 100%;
@@ -66,7 +72,7 @@ export default () => (
           flex-direction: row;
           width: 100%;
           height: 100vh;
-          overflow-y: scroll;
+          overflow-y: hidden;
         }
         .flex-blog {
           display: flex;
@@ -75,7 +81,7 @@ export default () => (
           width: 95%;
           line-height: 25px;
           height: 80%;
-          overflow-y: scroll;
+          overflow-y: hidden;
           z-index: 999;
         }
         .flex-nav {
@@ -157,11 +163,6 @@ export default () => (
             from { opacity: 0; }
             to   { opacity: 1; }
         }
-        ::-webkit-scrollbar {
-          width: 0px;  /* remove scrollbar space */
-          background: transparent;  /* optional: just make scrollbar invisible */
-        }
       `}</style>
     </Head>
-  </header>
-)
+  </header>;

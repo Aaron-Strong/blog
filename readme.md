@@ -8,4 +8,4 @@ yarn dev
 yarn build
 yarn start
 ```
-I'll fix firefx and mobile soon...™
+I'll fix mobile soon...™

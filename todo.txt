@@ -1,0 +1,9 @@
+make mobile layout -
+    put menu on top if viewport so small
+    think of other stuff to do
+
+maybe add IE support?
+
+customise scrollbar to fit with color scheme
+
+...add some content

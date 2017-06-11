@@ -15,11 +15,16 @@ export default class extends React.Component {
 
   componentDidMount() {
     if (
+      // If using IE
       localStorage.getItem("alerted") != "true" &&
-      !(navigator.userAgent.toLowerCase().indexOf("chrome") > -1)
+      (navigator.appName == "Microsoft Internet Explorer" ||
+        !!(
+          navigator.userAgent.match(/Trident/) ||
+          navigator.userAgent.match(/rv:11/)
+        ))
     ) {
       alert(
-        "This looks bad on anything but chromium/webkit based browsers right now, I'm sorry and will be working on a fix soon™"
+        "This doesn't work on IE, and I have no plans to make it work. Please stop using IE. (This message won't pop up again.)"
       );
       localStorage.setItem("alerted", true);
       // Do Firefox-related activities
