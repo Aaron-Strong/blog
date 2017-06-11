@@ -48,8 +48,9 @@ export default class extends React.Component {
             <div className="flex-blog">
               <div className="blog-border">
                 <Scrollbars
-                  style={{ width: "100%", height: "100%", overflow: "hidden" }}
                   universal
+                  autoHeight
+                  autoHeightMax="42em"
                   renderThumbVertical={({ style, ...props }) =>
                     <div
                       {...props}
