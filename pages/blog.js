@@ -64,7 +64,7 @@ export default class extends React.Component {
                 >
                   <div className="flex-row">
                     <a
-                      href="/blog"
+                      href="/"
                       style={{ lineHeight: "5em", textDecoration: "underline" }}
                       onClick={this.handleClickInternal}
                     >
