@@ -6,4 +6,6 @@ maybe add IE support?
 
 customise scrollbar to fit with color scheme
 
+clean url's --> https://learnnextjs.com/basics/clean-urls-with-route-masking
+
 ...add some content
