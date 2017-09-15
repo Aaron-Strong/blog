@@ -1,11 +1,11 @@
 /* eslint-disable */
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
-export default () =>
+export default () => (
   <header>
     <Head>
-      <title>Portfolio/Blog Test Site</title>
+      <title>Mooku.me</title>
       <meta charSet="utf-8" />
       <meta
         name="viewport"
@@ -224,7 +224,11 @@ export default () =>
             width: 100%;
             max-width: 100%;
           }
+          .hoverhand{
+            cursor: pointer;
+          }
 }
       `}</style>
     </Head>
-  </header>;
+  </header>
+);

@@ -8,4 +8,7 @@ yarn dev
 yarn build
 yarn start
 ```
-I'll fix mobile soon...™
+Firefox is a bit buggy when it comes to the side menu.
+I don't really know what i was thinking when i made that,
+it's incredibly mobile unfriendly and a pain to work with
+i'll replace it when i think of something nicer.

@@ -1,6 +1,4 @@
 redo home page for mobile -
     simply edit the css so each row fills up the full width and 30% of the height
 
-clean url's --> https://learnnextjs.com/basics/clean-urls-with-route-masking
-
 ...add some content
